@@ -16,7 +16,6 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Separator } from "@/components/ui/separator";
 import type LoginData from "@/types/LoginData";
 import toast from "react-hot-toast";
-import { LoginUserService } from "@/services/AuthService";
 import { useNavigate } from "react-router";
 import { Alert, AlertTitle } from "@/components/ui/alert";
 import { Spinner } from "@/components/ui/spinner";
@@ -35,7 +34,7 @@ export default function Login() {
 
     const login = useAuth((state) => state.login);
 
-    const [error, setError] = useState(null);
+    const [error, setError] = useState<string | null>(null);
     const [loading, setLoading] = useState<boolean>(false);
 
     const navigate = useNavigate();

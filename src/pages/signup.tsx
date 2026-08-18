@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import {
     AlertCircleIcon,
     ArrowRight,
-    CloudCog,
     Eye,
     EyeOff,
     Sparkles,

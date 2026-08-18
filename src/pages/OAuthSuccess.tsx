@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { Button } from '@/components/ui/button';
 import useAuth from '@/auth/store';
 import { getRefreshToken } from '@/services/AuthService';
 import toast from 'react-hot-toast';
@@ -21,7 +20,7 @@ const OAuthSuccess = () => {
 
             try {
                 const response = await getRefreshToken();
-                auth.changeLocalLoginData(
+                auth.changeLocalLoginData!(
                     response.accessToken,
                     response.userDto,
                     true,

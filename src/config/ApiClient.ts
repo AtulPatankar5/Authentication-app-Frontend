@@ -164,7 +164,7 @@ apiClient.interceptors.response.use(
             // UPDATE AUTH STORE
             // ================================
 
-            useAuth.getState().changeLocalLoginData(
+            useAuth.getState().changeLocalLoginData!(
                 refreshResponse.accessToken,
                 refreshResponse.userDto,
                 true,

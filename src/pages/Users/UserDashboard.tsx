@@ -295,7 +295,7 @@ export default function UserDashboard() {
                                     <User className="h-3.5 w-3.5 text-primary" />
                                 </div>
 
-                                <span className="text-sm">{user.name}</span>
+                                <span className="text-sm">{user?.name}</span>
 
                                 {/* <ChevronDown className="h-3.5 w-3.5 text-muted-foreground" /> */}
                             </Button>
@@ -328,7 +328,7 @@ export default function UserDashboard() {
                                     </p>
 
                                     <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">
-                                        Good afternoon, {user.name}
+                                        Good afternoon, {user?.name}
                                     </h1>
 
                                     <p className="mt-2 text-sm text-muted-foreground">
